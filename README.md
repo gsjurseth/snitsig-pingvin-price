@@ -10,5 +10,7 @@ This is how we run:
 
 `gcloud builds submit --config=cloudbuild.yaml --substitutions=_REGION=europe-west1 .`
 
+But any commits to this repo should trigger an autobuild of the service
+
 ## TODO
 The service account pieces are hardcoded and need to be automated
