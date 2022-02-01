@@ -1,0 +1,21 @@
+{  
+  "operationConfigs": [
+    {
+      "apiSource": "@@SVC@@",
+      "operations": [
+        {
+          "resource": "/",
+          "methods": [
+            "GET", "POST", "DELETE", "PUT"
+          ]
+        }
+      ],
+      "quota": {
+        "limit": "10",
+        "interval": "1",
+        "timeUnit": "minute"
+      }
+    }
+  ],
+  "operationConfigType": "proxy"
+}
